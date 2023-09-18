@@ -1,0 +1,41 @@
+h1 {
+  color: rgb(36, 179, 36);
+}
+.titre {
+  color: brown;
+}
+
+#principal {
+  color: blueviolet;
+}
+
+@keyframes ghost-animation {
+  0% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translate(50px, -50px);
+  }
+  50% {
+    transform: translate(50px, 50px);
+  }
+  75% {
+    transform: translate(100px, 50px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+#ghost {
+  height: 50px;
+  width: 50px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  animation: ghost-animation 5s infinite;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}

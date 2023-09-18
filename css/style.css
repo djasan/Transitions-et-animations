@@ -1,0 +1,24 @@
+
+h1:hover {
+  color: hsl(270, 77%, 31%);
+  opacity: 1;
+  transform: scale(150%) translateX(15%);
+  cursor: -webkit-grab;
+  cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: brown;
+}
+
+a:visited{
+color: aqua;
+
+}
+
+a:hover{
+color: blueviolet;
+ text-decoration:underline;
+}
+
+
