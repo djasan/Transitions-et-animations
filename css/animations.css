@@ -1,4 +1,8 @@
+/*  
+
 h1 {
+
+
   color: rgb(36, 179, 36);
 }
 .titre {
@@ -27,15 +31,45 @@ h1 {
   100% {
     transform: translate(0, 0);
   }
-}
+/* } */
 
-#ghost {
+#animation2 {
   height: 50px;
   width: 50px;
   background-color: aquamarine;
   border-radius: 50%;
-  animation: ghost-animation 5s infinite;
-  position: absolute;
+
+  animation: flip-scale-up-hor 0.5s linear both;
+
   left: 50%;
   top: 50%;
+}
+
+@-webkit-keyframes flip-scale-up-hor {
+  0% {
+    -webkit-transform: scale(1) rotateX(0);
+    transform: scale(1) rotateX(0);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotateX(-90deg);
+    transform: scale(2.5) rotateX(-90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateX(-180deg);
+    transform: scale(1) rotateX(-180deg);
+  }
+}
+@keyframes flip-scale-up-hor {
+  0% {
+    -webkit-transform: scale(1) rotateX(0);
+    transform: scale(1) rotateX(0);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotateX(-90deg);
+    transform: scale(2.5) rotateX(-90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateX(-180deg);
+    transform: scale(1) rotateX(-180deg);
+  }
 }
